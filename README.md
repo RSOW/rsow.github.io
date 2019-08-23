@@ -1,2 +1,2 @@
 # RSOW.github.io
-Official page RSOW
+Official page RedStar of War[RSOW].
