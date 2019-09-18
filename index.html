@@ -2,32 +2,153 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>RSOW</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="shortcut icon"  type="image/x-icon" href="icons/#">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="shortcut icon"  type="image/x-icon" href="icons/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
 
-
-<div class="show_project">
-    <img src="image/christian-joudrey-u_nsiSvPEak-unsplash.jpg">
-    <div class="text"><big><h1>Ввёдется разработка</h1></big> </div>
+<body data-spy="scroll" data-targat="#menu">
+<!---Start Home Section -->
+<!--- Navigation -->
+<div id="home">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">RSOW </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Rules</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Apps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">About us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--- End Navigation -->
+    <!--- Start landing Page -->
+    <div class="landing">
+        <div class="home-wrap">
+            <div class="ho home-inner">
+                <div class=" background-video">
+                    <video id="video-elem" preload="auto" autoplay="true" loop="loop" muted="muted"  width="100%" height="100%" >
+                        <source src="video/#" type="video/webm">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--- End landing Page -->
+    <!--- Start Landing Page Caption -->
+    <div class="caption center-block text-center">
+        <h3>Welcome<br> to <br> "project RSOW"  </h3>
+        <a class="btn btn-outline-light" href="html/apps.html">Apps</a>
+    </div>
+    <!--- End Landing Page Caption -->
 </div>
-<div class="about_project">
+<!--- End Home Section -->
+<!--- Start About Section -->
+<div id="about">
+    <div class="jumbotron">
+        <h3 class="heading">RSOW</h3>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <h4>Free Apps</h4>
+                <p>Our app is absolutely free and <br>available to everyone .</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <h4>Сomfortability</h4>
+                <p>The interface and quality of our<br> application is always on top.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <h4>Security</h4>
+                <p>We guarantee full confidentiality of your<br> data and protection in the network.</p>
+            </div>
+        </div>
+    </div><!-- End Jumbotron --->
+</div><!---End About Section-->
+<!--- Start Portfolio Section -->
+<div id="portfolio">
+    <div class="container-fluid padding">
+        <h3 class="heading"> Supported platform</h3>
+        <div class="row no-padding">
+            <div class="col-md-6 portfolio_picture">
+                <img class="portfolio" src="image/36582.jpg" href="https://drive.google.com/drive/folders/1gXQaEcKSTO3083InokLc0jo1_NXwAIBN?usp=sharing">
+            </div>
+            <div class="col-md-6 portfolio_picture">
+                <img class="portfolio " src="image/android-wallpaper-hd-5.jpg" href="https://drive.google.com/open?id=1oj9CMR_fShtnAQtdoj78fcEDNFyYH9MN" >
+            </div>
+            <div class="col-md-6 portfolio_picture">
+                <img class="portfolio" src="image/microsoft-reveals-the-official-windows-10-wallpaper-485311-2.jpg" href="https://drive.google.com/drive/folders/18ZHxJWUcAoVlvxZ8fsaB1ZWuxV68XUGA?usp=sharing">
+            </div>
+            <div class="col-md-6 portfolio_picture">
+                <img class="portfolio" src="image/free-linux-wallpaper-widescreen-1920x1200.png" href="https://drive.google.com/drive/folders/1Bebc3p59DoeSNWy5NbrJGTctmUSKUvuA?usp=sharing">
+            </div>
+        </div>
 
+    </div>
+</div>
+<!--End Portfolio Section -->
+<!---Start Testimonials Section -->
+<div id="testimonials">
+    <h3 class="heading"> Testimonals</h3>
+    <div class="row padding">
+        <div class="col-md-6">
+            <div class="card text-center">
+                <img class="card-img-top" src="image/iphone.jpg">
+                <div class="card-body">
+                    <h4>IOS</h4>
+                    <p> Download our APP on IOS.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card text-center">
+                <img class="card-img-top" src="image/Nexus.jpg" hred>
+                <div class="card-body">
+                    <h4>Android</h4>
+                    <p >Download our APP on Android.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--- Start  Contact Section -->
+<div id="contact">
+    <div class="container-fluid footer">
+        <div class="row">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="image/FlyBi.png">
+                <p>Our developers are constantly thinking how to improve and make our application even more comfortable.</p>
+                <strong> Our lacation</strong>
+                <p>Street Ozeshko ,123,Grodno,Belarus , 230000</p>
+                <strong>Contact</strong>
+                <p>Evgeni Voronko <br>+37533$$$$$53</p>
+            </div>
+        </div>
+    </div>
 </div>
 
-<div class="where_are_we">
-
-</div>
-
-<div class="contact_information">
-
-</div>
-
-<div class="creators">
-
-</div>
+<!--- Script Source Files -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<!-- End Script Source Files -->
 </body>
 </html>

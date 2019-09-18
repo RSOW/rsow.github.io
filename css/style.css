@@ -1,122 +1,153 @@
-@import url(https://fonts.googleapis.com/css?family=Julius+Sans+One);
-html{width: 100%;
-    height: 100%;
+html{
+   overflow-x: hidden;
 }
-body{margin: 0;
-    padding: 0;
-    background-color: black;
-}
-
-.eye{
-    width: 20px; height: 8px;
-    background-color: red;
-    border-radius:0 0 20px 20px;
-    position: relative;
-    left: 10px; top: 40px;
-    box-shadow:  40px 0 0 0 red;
+body {
+    overflow-x: hidden;
+    font-family: sans-serif;
+    color: lightslategray;
+    background-color: lightskyblue;
 }
 
-.head{
-    -webkit-backface-visibility: hidden;
-    position: relative;
-    margin: -250px auto;
-    width: 80px; height: 80px;
-    background-color: lightcoral;
-    border-radius:50px;
-    box-shadow: inset -4px 2px 0 0  white;
-    -webkit-animation:headAnim 1.5s infinite alternate;
-    -webkit-animation-timing-function:ease-out;
+.navbar{
+    text-transform: uppercase;
+    -webkit-animation: neon .99s ease-in-out infinite alternate;
+    animation: neon .99s ease-in-out infinite alternate;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    opacity: 0.7;
+}
+@-webkit-keyframes neon {
+    from {
+        text-shadow: 0 0 6px rgba(202, 228, 225, 0.92), 0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(250, 246, 4, 1), 0 0 21px rgba(227, 224, 57, 1), 0 0 34px rgba(30, 132, 242, 0.78), 0 0 54px rgba(30, 132, 242, 0.92);
+    }
+    to {%
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(30, 132, 242, 0.58), 0 0 22px rgba(227, 224, 57, 1), 0 0 38px rgba(30, 132, 242, 0.88), 0 0 60px #1e84f2;
+    }
+}
+@keyframes neon {
+    from {
+        text-shadow: 0 0 6px rgba(250, 5, 229, 1), 0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(250, 5, 229, 1), 0 0 21px rgba(30, 132, 242, 0.92), 0 0 34px rgba(227, 224, 57, 1), 0 0 54px rgba(30, 132, 242, 0.92);
+    }
+    to {
+        text-shadow: 0 0 6px rgba(250, 5, 229, 1), 0 0 30px rgba(202, 228, 225, 0.42 ), 0 0 12px rgba(30, 132, 242, 0.58), 0 0 22px rgba(30, 132, 242, 0.84), 0 0 38px rgba(30, 132, 242, 0.88), 0 0 60px #1e84f2;
+    }
 }
 
-.body{
-    position: relative;
-    margin: 90px auto;
-    width: 140px; height: 120px;
-    background-color: lightcoral;
-    border-radius: 50px/25px ;
-    box-shadow: inset -5px 2px 0 0 rgba(240,220,220,1);
-    -webkit-animation:bodyAnim 1.5s infinite alternate;
-    -webkit-animation-timing-function:ease-out;
+.home-inner {
+    background: linear-gradient( rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.9) ), url("../image/image_1.jpg ") no-repeat center fixed;
+
 }
 
-@-webkit-keyframes headAnim{
-    0%{ top:0; }
-    50%{ top:10px; }
-    100% { top:0;}
-}
-
-@-webkit-keyframes bodyAnim{
-    0%{ top:-5px; }
-    50%{ top:10px; }
-    100% { top:-5px;}
-}
-
-.circle{
-    -webkit-backface-visibility: hidden;
-    margin: 60px auto;
-    width: 180px; height: 180px;
-    background-color: black;
-    border-radius: 0 0 50px 50px;
-    position: relative;
-    z-index: -1;
-    left: 0; top: 20%;
-    overflow: hidden;
-}
-
-.hands{
-    -webkit-backface-visibility: hidden;
-    margin-top: 140px;
-    width: 120px;height: 120px;
-    position: absolute;
-    background-color: black;
-    border-radius:20px;
-    box-shadow:-1px -4px 0px 0px rgba(240,220,220,1);
-    -webkit-transform:rotate(45deg);
-    top:75%;left: 16%;
-    z-index: 1;
-    -webkit-animation:bodyAnim 1.5s infinite alternate;
-    -webkit-animation-timing-function:ease-out;
-}
-
-.load{
-    position: absolute;
-    width: 7ch; height: 32px;
-    text-align: left;
-    line-height: 32px;
-    margin: -10px auto;
-    -webkit-font-smoothing: antialiased;
-    font-family: 'Julius Sans One', sans-serif;
-    font-size:28px;
-    font-weight:400;
-    color:lightcoral;
-    left: 2%; top: 5%;
-    -webkit-animation:fontAnim 3.75s infinite;
-    -webkit-animation-timing-function:ease-out;
-    word-wrap: break-word;
-    display:block;
-    overflow: hidden;
-}
-
-@-webkit-keyframes fontAnim{
-    0%{ width:7ch; }
-    16%{ width:8ch; }
-    32%{ width:9ch; }
-    48%{ width:10ch; }
-    64%{ width:11ch; }
-    80%{ width:12ch; }
-    100% { width:13ch;}
-}
-
-.show_project img{
+.backgraund-video{
+    position: fixed;
     width: 100%;
     height: 100%;
+    overflow: hidden ;
+    top:0;
+    left:0;
+}
+#video-elem{
+    position: fixed;
+    top:0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    opacity: 0.5;
+
+}
+.caption{
+    width: 100%;
+    max-width: 100%;
     position: absolute;
+    top:40%;
+    z-index: 1;
+}
+.caption h3{
+    color: white;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+
+}
+.btn{
+    border-width: medium;
+    text-transform: uppercase;
+    padding: .5rem 1.1rem;
+    font-size: .8rem;
+    border-radius: 30px;
+
+}
+h3.heading{
+    text-align: center;
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    margin-bottom: 1.9rem;
+
+}
+.portfolio_picture{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+.padding{
+    padding: 2rem 0;
+}
+img.portfolio{
+    max-width: 100%;
+    min-height: 100%;
+}
+.no-padding .col-md-6{
+    padding: 0;
+}
+.card{
+    margin: 2rem;
+}
+.footer .row{
+    background-color: #505962;
+    padding: 1rem 2rem 3rem;
+    color: white;
+
+}
+.footer img{
+    height: 2rem;
+    top:0;
+    left: 0;
+    color: white;
+    margin: 1.5rem 0;
 }
 
-.text{
-    position: absolute;
-    top: 50%;
-    right: 45%;
-    color: black;
 
+
+
+/*--- iOS Landing Page Fix --*/
+.landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: table;
+    background: #E9ECEF;
+    z-index: -1;
+}
+.home-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.home-inner {
+    position: fixed;
+    display: table;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
 }
