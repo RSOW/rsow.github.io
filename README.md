@@ -1,2 +1,2 @@
-# rsow.github.io
-My first stupid page
+# RSOW.github.io
+Official page RedStar of War[RSOW].
